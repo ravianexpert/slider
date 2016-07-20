@@ -15,7 +15,7 @@
 	transition:all 0.6s ease-in-out;
 	}
 
-.slider ul li{
+.slider > ul > li{
 	float: left;
 	height: 200px;
 	list-style: none;
@@ -38,4 +38,28 @@
 .next{
 	left:auto;
 	right:0;
+	}
+
+.pagination{
+	position:absolute;
+	left:10px;
+	bottom:10px;
+	z-index:999;
+	}
+
+.pagination > span{
+	background:rgba(0, 0, 0, 0.5);
+	border-radius:10px;
+	color:#fff;
+	font:12px/20px arial;
+	cursor:pointer;
+	display: inline-block;
+	height:20px;
+	margin:5px;
+	text-align:center;
+	width:20px;
+	}
+	
+.pagination > span:hover{
+	background:#f00;
 	}
